@@ -200,7 +200,12 @@
     object-fit: cover;  /* Garante que a imagem preencha o espaço sem distorcer */
     display: block;
   }
-
+    @media (max-width: 768px) {
+  .slide img {
+    height: auto;
+    max-height: 60vh;
+  }
+}
   .slide {
     display: none;
   }
