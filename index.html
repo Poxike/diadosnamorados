@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
+<button onclick="document.getElementById('musica').play()" 
+  style="
+    background-color: #ff7f50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;  /* Centraliza horizontalmente */
+  ">
+  Tocar Música 🎶
+</button>
+<audio id="musica" loop>
+  <source src="musica/sparks.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio HTML5.
+</audio>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dia dos namorados</title>
     <script src="./saved_resource"></script>
@@ -8,7 +29,7 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+            background: linear-gradient(135deg, #69371e 0%, #8f745b 100%);
             min-height: 100vh;
             margin: 0;
             padding: 0;
@@ -16,10 +37,7 @@
         .romantic-font {
             font-family: 'Dancing Script', cursive;
         }
-        .heart {
-            animation: heartbeat 1.5s ease-in-out infinite;
-            color: #ff7e5f;
-        }
+
         @keyframes heartbeat {
             0% { transform: scale(1); }
             25% { transform: scale(1.1); }
@@ -72,7 +90,7 @@
             transform: scale(1.05);
         }
         .orange-gradient {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            background: linear-gradient(to right, #9b3f28, #f07c00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -87,12 +105,12 @@
             <h1 class="verdana-font text-5xl md:text-6xl mb-3 orange-gradient">Feliz dia dos namorados! 🧡</h1>
             <p class="text-orange-600 mb-8 text-lg">Juntos desde 30 de julho de 2023</p>
             
-<div class="mb-6">
+<div class="mb-10">
   <h2 class="text-2xl md:text-3xl font-semibold text-orange-500 mb-6">Estamos juntos há:</h2>
 
     <div class="grid grid-cols-2 gap-2 w-full">
     <div class="time-unit bg-gradient-to-br from-orange-50 to-orange-100 p-2 shadow-sm text-center">
-      <div id="days" class="text-4xl sm:text-4xl md:text-4xl font-bold text-orange-600">679</div>
+      <div id="days" class="text-2xl sm:text-4xl md:text-4xl font-bold text-orange-600">679</div>
       <div class="text-orange-500 font-medium mt-1">Dias</div>
     </div>
     <div class="time-unit bg-gradient-to-br from-orange-50 to-orange-100 p-2 shadow-sm text-center">
@@ -221,7 +239,7 @@
   }
    </style>
             <div class="mb-10">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full">
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-2 w-full">
                     <div class="time-unit bg-gradient-to-br from-orange-50 to-orange-100 p-2 shadow-sm text-center">
                         <div id="months" class="text-2xl sm:text-4xl md:text-5xl font-bold text-orange-600">22</div>
                         <div class="text-orange-500">Meses</div>
@@ -230,6 +248,9 @@
                         <div id="weeks" class="text-2xl sm:text-4xl md:text-5xl font-bold text-orange-600">97</div>
                         <div class="text-orange-500">Semanas</div>
                     </div>
+                  </div>
+            <div class="mb-10">
+                  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-1 w-full"></div>
                     <div class="time-unit bg-gradient-to-br from-orange-50 to-orange-100 p-2 shadow-sm text-center">
                         <div id="total-hours" class="text-2xl sm:text-4xl md:text-5xl font-bold text-orange-600">16311</div>
                         <div class="text-orange-500">Horas Totais</div>
@@ -286,11 +307,5 @@
         setInterval(updateCounter, 1000);
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94ca4d2701dcd838',t:'MTc0OTQwNTc1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource.html"></iframe>
-
-<button onclick="document.getElementById('musica').play()">Tocar Música</button>
-<audio id="musica" loop>
-  <source src="musica/sparks.mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio HTML5.
-</audio>
 
 </body></html>
